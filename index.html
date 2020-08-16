@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no"/>
+    <title>PigDataスクレイピング代行</title>
+    <link rel="apple-touch-icon" type="image/png" href="image/apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" href="image/icon-192x192.png">
+    <meta name="description" content="Webサイトからのデータ収集が面倒…そんなアナタは、ぜひ「PigDataスクレイピング代行」をご利用ください！面倒なWebデータ収集を一手に肩代わり！専門エンジニアがどんなサイトでもスクレイピング！そしてさらに分析まで！">
+    <meta name="robots" content="noindex,nofollow" />
+    <script type="text/javascript" src="userAgent.js"></script>
+    <script language="JavaScript">
+      < !--
+          function na_restore_img_src(name, nsdoc) {
+            var img = eval((navigator.appName == 'Netscape') ? nsdoc + '.' + name : 'document.all.' + name);
+            if (name == '')
+              return;
+            if (img && img.altsrc) {
+              img.src = img.altsrc;
+              img.altsrc = null;
+            }
+          }
+
+        function na_change_img_src(name, nsdoc, rpath, preload) {
+          var img = eval((navigator.appName == 'Netscape') ? nsdoc + '.' + name : 'document.all.' + name);
+          if (name == '')
+            return;
+          if (img) {
+            img.altsrc = img.src;
+            img.src = rpath;
+          }
+        }
+
+      // -->
+    </script>
+    <link rel="stylesheet" href="css/bootstrap.min.css" media="screen" />
+    <link rel="stylesheet" href="stylesheet.css" />
+  </head>
+  <body>
+<!-- ヘッダー -->
+    <header class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
+        <div class="container">
+          <a class="navbar-brand" href="https://services.sms-datatech.co.jp/pig-data/"><img src="./image/Pigdata_LOGO_white_transparent_20190424.png" width="120px" height="47px" alt=""></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!-- ナビゲーション -->
+          <div class="collapse navbar-collapse" id="navbar-content">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item"><a class="nav-link" href="#resolytion">4つの強み</a></li>
+              <li class="nav-item"><a class="nav-link" href="#about">スクレイピング代行とは</a></li>
+              <li class="nav-item"><a class="nav-link" href="#illustration">実施例</a></li>
+              <li class="nav-item"><a class="nav-link" href="#anxiety">Q&A</a></li>
+              <li class="nav-item"><a class="nav-link" href="#flow">導入までの流れ</a></li>
+              <li class="nav-item">
+                <span class="nav-link" data-toggle="tooltip" data-placement="bottom" title="平日9:00～18:00">☎03-6222-0831</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      <!-- <div class="header__wrap d-flex-center justify-content-between header-color">
+        <div class="header__nav d-flex-center">
+          <div class="nav nav-fill">
+            <h1><a href="https://services.sms-datatech.co.jp/pig-data/" target=" _blank">PigData</a></h1>
+            <ul class="nav nav-fill">
+              <li><a href="#resolytion">4つの強み</a></li>
+              <li><a href="#about" class="active">スクレイピング代行とは</a></li>
+              <li><a href="#illustration">実施例</a></li>
+              <li><a href="#anxiety">Q&A</a></li>
+              <li><a href="#flow">導入までの流れ</a></li>
+              <li>
+                <div class="balloonoya"><a href="#"><span color="white"><h3><b>☎03-6222-0831</b></h3></span></a><span class="balloon">平日9:00～18:00</span></div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div> -->
+    </header>
+<!-- ボタン -->
+    <div id="main-image">
+      <div id="main-image-content2">
+        <a id="main-image-btn" href="consultation" class="btn font-weight-bold px-3 px-md-5 py-3 btn-success url-btn text-white btn-lg">スクレイピングについて相談する</a>
+      </div>
+    </div>
+  <!-- コンテンツ -->
+  <!-- Webスクレイピング、こんな問題を抱えていませんか？ -->
+<div id="trouble bg-secondary" class="bg-light">
+  <h2 class="text-center bg-info text-white py-md-5 py-3 font-weight-bold h0 position-relative top-h-2" id="tri-bottom">Webスクレイピング、こんな問題を抱えていませんか？</h2>
+  <div class="container pt-5 pb-5">
+    <div class="mb-3 row justify-content-left">
+      <div class="col-3 pr-0 col-md-2 text-center"> <img class="img-fluid" src="./image/trouble1.png" alt=""></div>
+      <div class="col-9 col-md-8">
+        <div class="bg-white p-4 rounded-bottom rounded-right">
+          <h3 class="text-info h4 font-weight-bold">スクレイピングをやりたいけど・・・</h3>
+          <p class="mb-0">スクレイピングをやれる環境がない</b><br>
+						他社に頼むとコストが高そう<br>
+						データを取得したいサイトが多すぎて管理できない</p>
+        </div>
+      </div>
+    </div>
+    <div class="row mb-3 justify-content-end">
+      <div class="col-3 pl-0 col-md-2 order-last text-center"> <img class="img-fluid" src="./image/trouble2.png" alt=""> </div>
+      <div class="col-9 col-md-8">
+        <div class="bg-white p-4 rounded-bottom rounded-left">
+          <h3 class="text-info h4 font-weight-bold">スクレイピングをやっているけど・・・</h3>
+          <p class="mb-0">うまくデータ取得できないサイトがあった<br>
+						スクレイピングで取得したデータが活用しづらい<br>
+						他社に代行してもらっているけど、もう少しコストを抑えたい</p>
+        </div>
+      </div>
+    </div>
+    <div class="mb-3 row justify-content-left">
+      <div class="col-3 pr-0 col-md-2 text-center"> <img class="img-fluid" src="./image/trouble3.png" alt=""></div>
+      <div class="col-9 col-md-8">
+        <div class=" bg-white p-4 rounded-bottom rounded-right">
+          <h3 class="text-info h4 font-weight-bold">データを活用したいけど・・・</h3>
+          <p class="mb-0">活用したいデータのイメージはあるけど、どこから収集すればいいかわからない<br>
+						データ活用のイメージはあるが、具体的な方法がわからない<br>
+						自社にデータはあるけど売上アップのためのデータ分析ができない</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- PigDataスクレイピング代行なら解決！ -->
+<div id="resolution" class="bg-light">
+  <h2 class="text-center bg-info text-white py-md-5 py-3 font-weight-bold top-h-2"><span class="font-weight-bold h0 text-danger">「PigDataスクレイピング代行」</span>なら<span class="font-weight-bold h0 text-warning">解決！</span></h2>
+  <div class="container pt-4 pt-md-5 pb-5">
+    <div class=" row justify-content-center">
+      <div class="col-md-6 mb-3 mb-md-4">
+        <div class="card shadow h-100 bg-white">
+          <div class="card-body">
+            <h3 class="text-center h5 font-weight-bold line-2" style="color:#f42525;">完全オーダーメイド、<br>
+						なのに圧倒的低コスト</h3>
+            <img class="mb-3 mx-auto d-block mw-100" src="./image/costdown.png" alt="">
+            <p class="card-text">スクレイピングに特化することで、<b>完全オーダーメイドでも2万円～</b>と低価格でサービスをご提供致します。さらに<b>最短3日</b>でデータのご提供が可能です。</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 mb-3 mb-md-4">
+        <div class="card shadow h-100 bg-white">
+          <div class="card-body">
+            <h3 class="text-center h5 font-weight-bold line-2" style="color:#f42525;">データ整形から<br>
+							分析まで代行</h3>
+            <img class="mb-3 mx-auto d-block mw-100" src="./image/analyze.png" alt="">
+            <p class="card-text"><b>目的に合わせて取得したデータを整形、分析</b>し、わかりやすいグラフ等でレポート致します。</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 mb-3 mb-md-4">
+        <div class="card shadow h-100 bg-white">
+          <div class="card-body">
+            <h3 class="card-title text-center h5 font-weight-bold" style="color:#f42525;">データサイエンティストによる<br>
+							データ活用コンサルティング</h3>
+            <img class="mb-3 mx-auto d-block mw-100" src="./image/consulting.png" alt="">
+            <p class="card-text">御社のイメージするデータ活用を、<b>弊社データサイエンティストが具現化</b>するお手伝いを致します。</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 mb-3 mb-md-4">
+        <div class="card shadow h-100 bg-white">
+          <div class="card-body">
+            <h3 class="text-center h5 font-weight-bold" style="color:#f42525;">API連携など<br>
+						データを使ったシステム開発</h3>
+            <img class="mb-3 mx-auto d-block mw-100" src="./image/api.png" alt="">
+            <p class="card-text">収集したデータを分析、活用までをAPIを用いて一括で行えるシステムを構築することも可能です。<b>ご要望に合わせたシステム開発</b>を行います。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="mt-3 text-center"><a id="second-btn" href="#consultation" class="btn font-weight-bold px-3 px-md-5 py-3 btn-success url-btn text-white btn-lg">スクレイピングについて相談する</a></div>
+  </div>
+</div>
+<!-- 「PigDataスクレイピング代行」って？ -->
+<div id="about">
+  <div class="container pt-5 pb-5">
+    <h2 class="text-center font-weight-bold mb-4">「PigDataスクレイピング代行」って？</h2>
+    <div class=" row justify-content-center">
+      <div class="col-md-4 mb-3 mb-md-4">
+        <div class="card border-0 shadow h-100"><img class="card-img-top" src="./image/about1.jpg" alt="">
+          <div class="card-body">
+            <h3 class="card-title text-center h5-small font-weight-bold">面倒なWebデータ収集を<br>
+							一手に肩代わり！</h3>
+            <p class="card-text">手間がかかるWebデータの取得業務、Webスクレイピング作業を気軽にお任せ！あなたに必要なことは、WebサイトのURLを送るだけ。<br>
+							ご指定のWebサイトからデータ取得をしてきれいに整えお届けいたします。</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-3 mb-md-4">
+        <div class="card border-0 shadow h-100"><img class="card-img-top" src="./image/about2.jpg" alt="">
+          <div class="card-body">
+            <h3 class="card-title text-center h5-small font-weight-bold">専門エンジニアが<br>
+							どんなサイトでもスクレイピング！</h3>
+            <p class="card-text">一般的にはスクレイピングが困難な構造のサイトであっても、専門のエンジニアが知識とスキルを駆使し、一括取得するアルゴリズムを作成します。どんなサイトからでもお客様が必要なデータを確実に取得しお届けいたします。</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-3 mb-md-4">
+        <div class="card border-0 shadow h-100"><img class="card-img-top" src="./image/about3.jpg" alt="">
+          <div class="card-body">
+            <h3 class="card-title text-center h5-small line-2 font-weight-bold">そしてさらに分析まで！</h3>
+            <p class="card-text">さらに、必要であればデータ整形、分析までも一括してお受けいたします。<br>
+							取得したデータを意味のある情報に加工・変換をし価値あるアウトプットの作成を強力にサポートします。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- 主要取引先企業一覧 -->
+<div id="about" style="margin-bottom: 50px;">
+  <div class="container pt-5 pb-5">
+    <h2 class="text-center font-weight-bold mb-4">主要取引先企業一覧（グループ会社全体）</h2>
+    <div class="slide_company">
+      <ul>
+        <li><img src="./image/softbank.png" alt="softbank" class="alignnone size-full wp-image-4854" /></li>
+        <li><img src="./image/diamond.png" alt="diamond" class="alignnone size-full wp-image-4861" /></li>
+        <li><img src="./image/tokyogas.png" alt="tokyogas" class="alignnone size-full wp-image-4848" /></li>
+        <li><img src="./image/nttfac.png" alt="ntt_facilities" class="alignnone size-full wp-image-4851" /></li>
+        <li><img src="./image/sony.png" alt="sony" class="alignnone size-full wp-image-6141" /></li>
+        <li><img src="./image/jvckenwood.png" alt="JVCケンウッド" class="alignnone size-full wp-image-4848" /></li>
+        <li><img src="./image/ndp.png" alt="ndp" class="alignnone size-full wp-image-4900" /></li>
+        <li><img src="./image/bain.png" alt="bain" class="alignnone size-full wp-image-6139" /></li>
+        <li><img src="./image/nttdata.png" alt="nttdata" class="alignnone size-full wp-image-4850" /></li>
+        <li><img src="./image/sbi.png" alt="SBI" class="alignnone size-full wp-image-4848" /></li>
+        <li><img src="./image/gemmy.png" alt="gemmy" class="alignnone size-full wp-image-4862" /></li>
+        <li><img src="./image/arfaetha.png" alt="alfaetha" " class=" alignnone size-full wp-image-4858" /></li>
+        <li><img src="./image/tis.png" alt="tis" class="alignnone size-full wp-image-4856" /></li>
+        <li><img src="./image/raynos.png" alt="raynos" class="alignnone size-full wp-image-4863" /></li>
+        <li><img src="./image/project.png" alt="project" class="alignnone size-full wp-image-4852" /></li>
+        <li><img src="./image/xymax.png" alt="xymax" class="alignnone size-full wp-image-6142" /></li>
+        <li><img src="./image/finc.png" alt="FiNC" class="alignnone size-full wp-image-4848" /></li>
+        <li><img src="./image/nanzan.png" alt="nanzan" class="alignnone size-full wp-image-6140" /></li>
+        <li><img src="./image/srs.png" alt="srs" class="alignnone size-full wp-image-6182" /></li>
+        <li><img src="./image/kfs.png" alt="kfs" class="alignnone size-full wp-image-6185" /></li>
+        <li><img src="./image/karakusa.png" alt="karakusa" class="alignnone size-full wp-image-6184" /></li>
+        <li><img src="./image/vivit.png" alt="vivit" class="alignnone size-full wp-image-6183" /></li>
+
+      </ul>
+    </div>
+  </div>
+  <div class="mt-3 text-center"><a id="third-btn" href="#consultation" class="btn font-weight-bold px-3 px-md-5 py-3 btn-success url-btn text-white btn-lg">スクレイピングについて相談する</a></div>
+</div>
+<!-- スクレイピング代行の成果物をちょっとだけお見せします！ -->
+<div id="about">
+  <h2 class="text-center bg-info text-white py-md-5 py-3 font-weight-bold h0 top-h-2">スクレイピング代行の成果物をちょっとだけお見せします！</h2>
+  <div class="py-4">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-4 mb-3 mb-md-4">
+          <div class="card border-0 shadow h-100"><img class="card-img-top" src="./image/data1.png" alt="スクレイピング">
+            <div class="card-body">
+              <h3 class="card-title text-center h5-small font-weight-bold">Web情報をすべてCSVに</h3>
+              <p class="card-text">Webサイトに掲載されている情報をスクレイピングし、文字データとしてCSVでご提供いたします。文字データとして保持することで、分析等の活用が行いやすくなります。</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-3 mb-md-4">
+          <div class="card border-0 shadow h-100"><img class="card-img-top" src="./image/data2.png" alt="">
+            <div class="card-body">
+              <h3 class="card-title text-center h5-small font-weight-bold">データを分析して可視化</h3>
+              <p class="card-text">スクレイピングで取得したデータ、もしくはお手持ちのデータを分析し、目的に合わせたかたちで可視化いたします。</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-3 mb-md-4">
+          <div class="card border-0 shadow h-100"><img class="card-img-top" src="./image/data3.png" alt="">
+            <div class="card-body">
+              <h3 class="card-title text-center h5-small font-weight-bold">分析API</h3>
+              <p class="card-text">独自に開発した分析APIを用いて、スクレイピングから分析した結果を特定のデータサーバーに載せることができます。これによって、データの変更によるWebサイトの更新等を自動化することができます。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- 「PigDataスクレイピング代行」実施例 -->
+<div id="illustration">
+  <div class="container pt-5 pb-5">
+    <h2 class="text-center font-weight-bold mb-4">「PigDataスクレイピング代行」実施例</h2>
+    <div class="row justify-content-center align-items-center">
+      <div class="col-md-2"> <img id="illustration1" class="rounded-circle img-fluid mx-auto d-block mb-3" src="./image/illustration1.jpg" alt="">
+        <p class="text-center small">代表取締役社長  岸 正也様</p>
+      </div>
+      <div class="col-md-10">
+        <p class="d-flex align-items-baseline font-weight-bold"><img class="mr-3" src="./image/illustration2.png" alt="">有限会社アルファサラボ</p>
+        <h3 class="text-info font-weight-bold h4">丁寧な対応と迅速なデータ取得、圧倒的コストメリットに大満足です。</h3>
+        <p>Webサイト構築時に必要なマスターデータを収集していただきました。これまでの業務でもWebからデータを収集していましたが、自社で行うとエンジニアの工数がかかり、また海外のツールではかゆいところに手が届かないという問題もありました。<br>
+					今回、発注から短期間での納品をお願いしましたが、他社と比べても1/5程度のコストで迅速にデータ取得をしていただき、大変満足しております。</p>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- 例えば、こんな使い方も！ -->
+<div id="example" class="bg-light">
+  <div class="container pt-5 pb-5">
+    <h2 class="text-center font-weight-bold mb-4">例えば、こんな使い方も！</h2>
+    <div class=" row  justify-content-center">
+      <div class="col-md-6 mb-3">
+        <div class="card border-0 shadow h-100">
+          <div class="card-body">
+            <h3 class="h4 card-title  font-weight-bold">現れ消えていくWeb情報を<br>
+							蓄積しデータ化</h3>
+            <p class="card-text">特定のWebサイト上のコンテンツを定期的にスクレイピングし蓄積し続けることが、スクレイピングアルゴリズムにより実現可能です。これにより、常に更新され変化し続けるWeb上の情報を、ひと繋がりの分析可能な意味あるデータとして保存しお届けすることが可能となります。</p>
+            <h4 class="text-warning h5">例えば・・・</h4>
+            <p class="card-text font-weight-bold">株式の情報など、数値が変化するサイトからWebデータを毎日取得。そのデータを蓄積することで、１カ月、半年、１年の動きを追うことができます。</p>
+          </div>
+          <img class="card-img-bottom" src="./image/example1.png" alt="">
+        </div>
+      </div>
+      <div class="col-md-6 mb-3">
+        <div class="card border-0 shadow h-100">
+          <div class="card-body">
+            <h3 class="h4 card-title font-weight-bold">毎日、毎週、毎月、<br>
+							いつでも指定したWebサイトを監視</h3>
+            <p class="card-text">人間の目ではWebサイトを日々監視していても、その変化に気づかないことがよくあります。スクレイピングすることで、ちょっとした変化に気づくことができ、大切なデータを逃さず知ることができます。</p>
+            <h4 class="text-warning h5">例えば・・・</h4>
+            <p class="card-text font-weight-bold">競合企業のニュースリリースを監視して、変化があったときや特定キーワードが含まれてたときにお知らせ！毎日チェックしなくても、スクレイピングなら必要なときに必要なデータを提供してくれます。</p>
+          </div>
+          <img class="card-img-bottom" src="./image/example2.png" alt="">
+        </div>
+      </div>
+    </div>
+    <div class="mt-3 text-center"><a id="fourth-btn" href="#consultation" class="btn font-weight-bold px-3 px-md-5 py-3 btn-success url-btn text-white btn-lg">スクレイピングについて相談する</a></div>
+  </div>
+</div>
+<!-- ありませんか？代行サービスへの不安 -->
+<div id="anxiety">
+  <h2 class="text-center bg-info text-white py-md-5 py-3 font-weight-bold h0 top-h-2">ありませんか？代行サービスへの不安</h2>
+  <div class="py-4">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-2 col-md-1 mb-3">
+          <p class="text-info display-4 font-weight-bold text-center mb-0">Q</p>
+        </div>
+        <div class="col-10 col-md-11 pl-0 mb-3 ">
+          <h3 class="h4 font-weight-bold text-info mb-0">初期費用がかかるのでは？</h3>
+        </div>
+        <div class="col-2 col-md-1 ">
+          <p class="text-warning display-4 font-weight-bold text-center mb-0">A</p>
+        </div>
+        <div class="col-10 col-md-11 pl-0">
+          <p class="mb-0">たしかに、専門エンジニアがオーダーメイドでスクレイピングのプログラミングをするので初期費用はかかります。<br>
+						しかし、現在かかっているコストを比較して長期的にみたとき、その費用は結果的に大幅に削減されるはずです。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="bg-light py-4">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-2 col-md-1 mb-3 ">
+          <p class="text-info display-4 font-weight-bold text-center mb-0 mb-0">Q</p>
+        </div>
+        <div class="col-10 col-md-11 pl-0 mb-3 ">
+          <h3 class="h4 font-weight-bold text-info mb-0">気になる！「PigDataスクレイピング代行」っていくらかかるの？</h3>
+        </div>
+        <div class="col-2 col-md-1">
+          <p class="text-warning display-4 font-weight-bold text-center mb-0">A</p>
+        </div>
+        <div class="col-10 col-md-11 pl-0">
+          <p class="mb-0">データを取得する量、Webサイトの複雑さにもよりますが、3万円～50万円で対応することが可能です。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="py-4">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-2 col-md-1 mb-3 ">
+          <p class="text-info display-4 font-weight-bold text-center mb-0">Q</p>
+        </div>
+        <div class="col-10 col-md-11 pl-0 mb-3 ">
+          <h3 class="h4 font-weight-bold text-info mb-0">データを取得できないWebサイトもあるのでは？</h3>
+        </div>
+        <div class="col-2 col-md-1">
+          <p class="text-warning display-4 font-weight-bold text-center mb-0">A</p>
+        </div>
+        <div class="col-10 col-md-11 pl-0">
+          <p class="mb-0">ページの構造にルールがない場合、そこからデータを取得することはできません。<br>
+						また、Webサイト側で規制をかけている場合、そこから大容量のデータ取得をすることは困難です。<br>
+						そのため、まずは指定のWebサイトから本当にデータを取得できるかどうか、検証することから始め、可能な限りのご提案をいたします。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="bg-light py-4">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-2 col-md-1 mb-3 ">
+          <p class="text-info display-4 font-weight-bold text-center mb-0">Q</p>
+        </div>
+        <div class="col-10 col-md-11 pl-0 mb-3 ">
+          <h3 class="h4 font-weight-bold text-info mb-0">努力すれば自分でできるのでは・・？</h3>
+        </div>
+        <div class="col-2 col-md-1">
+          <p class="text-warning display-4 font-weight-bold text-center mb-0">A</p>
+        </div>
+        <div class="col-10 col-md-11 pl-0">
+          <p class="mb-0">たしかに、Webデータ取得は努力すれば自分の力で行うことも可能です。しかし、そのために膨大な時間をつかっては意味がありません。あなたの得意分野を活かすためにも、苦手分野は得意な人に代行してもらうことも大切ではないでしょうか。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- ところでそもそも「PigData」って何？ -->
+<div id="about-pigdata" class="bg-info text-white text-center">
+  <div class="container pt-5 pb-5">
+    <h2 class="font-weight-bold mb-4">ところでそもそも「PigData」って何？</h2>
+    <p id="pig-data-title"><span>PigData</span> = Pick Data × Big Data</p>
+    <p id="pig-data-about-text" class="pb-3">データを収集するという「Pick Data」と「Big Data」をかけてみました。<br>
+			すみません。たいして面白くもないかもしれませんが、現在、世界中の何十億人もの<br class="d-sm-inline d-none">
+			ネットユーザーが日々書き込む情報によって、インターネットはデータの宝庫となっています。<br>
+			この急激に増え続ける無料のビッグデータを活用することは、<br class="d-sm-inline d-none">
+			ビジネスで勝ち抜くために今や不可欠となっています。<br>
+			この皆さんのビッグデータ収集のお力になりたい。<br>
+			そんな思いをこめて、PigDataという名前をつけました。</p>
+
+  </div>
+</div>
+<!-- 導入の流れ -->
+<div id="flow" class="bg-info text-center">
+  <div class="container pt-5 pb-5">
+    <h2 class="text-white font-weight-bold mb-4">導入の流れ</h2>
+    <div class="row justify-content-center">
+      <div class="col-md col-3 px-2 px-md-3 mb-3 flow-tri">
+        <div class="pb-2 card border-info rounded-lg shadow h-100 overflow-hidden">
+          <h3 class="h5 font-weight-bold py-2 card-title bg-secondary text-white">STEP1</h3>
+          <div class="card-body p-0"> <img class="card-img" src="./image/flow1.png" alt="">
+            <p class="line-2 card-text font-weight-bold">URLのご送付</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md col-3 px-2 px-md-3 mb-3 flow-tri">
+        <div class="pb-2 card border-info rounded-lg shadow h-100 overflow-hidden">
+          <h3 class="h5 font-weight-bold py-2 card-title bg-secondary text-white">STEP2</h3>
+          <div class="card-body p-0"> <img class="card-img" src="./image/flow2.png" alt="">
+            <p class="card-text font-weight-bold">調査<br>
+							<spna class="d-block small">（3営業日以内）</spna>
+						</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md col-3 px-2 px-md-3  mb-3 flow-tri">
+        <div class="pb-2 card border-info rounded-lg shadow h-100 overflow-hidden">
+          <h3 class="h5 font-weight-bold py-2 card-title bg-secondary text-white">STEP3</h3>
+          <div class="card-body p-0"> <img class="card-img" src="./image/flow3.png" alt="">
+            <p class="line-2 card-text font-weight-bold">見積</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md col-3 px-2 px-md-3  mb-3 flow-tri before-md-none">
+        <div class="pb-2 card border-info rounded-lg shadow h-100 overflow-hidden">
+          <h3 class="h5 font-weight-bold py-2 card-title bg-secondary text-white">STEP4</h3>
+          <div class="card-body p-0"> <img class="card-img" src="./image/flow4.png" alt="">
+            <p class="line-2 card-text font-weight-bold">成約</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md col-3 px-2 px-md-3  mb-3 flow-tri">
+        <div class="pb-2 card border-info rounded-lg shadow h-100 overflow-hidden">
+          <h3 class="h5 font-weight-bold py-2 card-title bg-secondary text-white">STEP5</h3>
+          <div class="card-body p-0"> <img class="card-img" src="./image/flow5.png" alt="">
+            <p class="line-2 card-text font-weight-bold">作業開始</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md col-3 px-2 px-md-3  mb-3 flow-tri">
+        <div class="pb-2 card border-info rounded-lg shadow h-100 overflow-hidden">
+          <h3 class="h5 font-weight-bold py-2 card-title bg-secondary text-white">STEP6</h3>
+          <div class="card-body p-0"> <img class="card-img" src="./image/flow6.png" alt="">
+            <p class="line-2 card-text font-weight-bold">納品</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md col-3 px-2 px-md-3  mb-3">
+        <div class="pb-2 card border-info rounded-lg shadow h-100 overflow-hidden">
+          <h3 class="h5 font-weight-bold py-2 card-title bg-secondary text-white">STEP7</h3>
+          <div class="card-body p-0"> <img class="card-img" src="./image/flow7.png" alt="">
+            <p class="line-2 card-text font-weight-bold">入金</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="mt-3 text-center"><a id="fifth-btn" href="#consultation" class="btn font-weight-bold px-3 px-md-5 py-3 btn-success url-btn text-white btn-lg">スクレイピングについて相談する</a></div>
+  </div>
+</div>
+<!-- まずはご相談から！ -->
+<div id="consultation">
+  <div class="container pt-5 pb-md-5 pb-0">
+    <h2 class="text-center font-weight-bold mb-4">まずはご相談から！</h2>
+    <p class="text-center pb-3">Webデータ取得を早く、正確に行うためには専門的な知識が必要となってきます。<br>
+			新たに人を雇ったり、重要な業務の時間を割いてまで行うのはコスト的にも難しい。<br>
+			そんなときは専門家に任せてみてはいかがでしょうか？<br>
+			ぜひまずは該当サイトのＵＲＬをお送り頂き、ご相談ください。</p>
+    <form id="contactform" method="POST" action="inq_form.php" accept-charset="UTF-8" enctype="multipart/form-data">
+      <input type="hidden" name="type" value="contact">
+      <input type="hidden" name="language" value="ja">
+      <input type="hidden" name="mode" value="check">
+      <div class="bg-light pt-4 pb-5  p-md-5 row justify-content-center">
+        <div class="form-group row col-md-11">
+          <label for="name-form" class="font-weight-bold col-md-4 col-form-label d-flex align-items-center">
+            <span class="badge badge-danger">必須</span>お名前
+          </label>
+          <input placeholder="代行太郎" type="text" class="form-control form-control-lg col-md-8 border-ivory bg-ivory" id="name-form" name="name" required>
+        </div>
+        <div class="form-group row col-md-11">
+          <label for="name-form" class="font-weight-bold col-md-4 col-form-label d-flex align-items-center">
+            <span class="badge badge-danger">必須</span>会社名
+          </label>
+          <input placeholder="株式会社ピッグデータ代行" type="text" class="form-control form-control-lg col-md-8 border-ivory bg-ivory" id="company-form" name="company" required>
+        </div>
+        <div class="form-group row col-md-11">
+          <label for="name-form" class="font-weight-bold col-md-4 col-form-label d-flex align-items-center">
+            <span class="badge badge-danger">必須</span>メールアドレス
+          </label>
+          <input placeholder="sample@pigdata.co.jp" type="text" class="form-control form-control-lg col-md-8 border-ivory bg-ivory" id="mail-form" name="mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required>
+        </div>
+        <div class="form-group row col-md-11">
+          <label for="name-form" class="font-weight-bold col-md-4 col-form-label d-flex align-items-center">
+            <span class="badge badge-danger">必須</span>電話番号<br>（ハイフン無）
+          </label>
+          <input placeholder="0344445555" type="text" class="form-control form-control-lg col-md-8 border-ivory bg-ivory" id="phone-form" name="phone" pattern="^0\d{9,10}$" required>
+        </div>
+        <div class="form-group row col-md-11">
+          <label for="name-form" class="font-weight-bold col-md-4 col-form-label d-flex align-items-center">
+            <span>
+              <span class="badge badge-danger">必須</span>データを取得したいサイトのURL
+            </span></label>
+          <input placeholder="https://sample.co.jp" type="text" class="form-control form-control-lg col-md-8 border-ivory bg-ivory" id="url-form" name="url" pattern="https?://.+" required>
+        </div>
+        <div class="form-group row col-md-11">
+          <label for="name-form" class="font-weight-bold col-md-4 col-form-label d-flex ">
+            <span>
+              <span class="badge badge-danger">必須</span>相談内容
+            </span></label>
+          <textarea placeholder="例))&#13;&#10;・見積もりをしてほしい&#13;&#10;・各項目のテキストデータが欲しい&#13;&#10;・データの取得を自動化したい 等" type="text" class="form-control form-control-lg col-md-8 border-ivory bg-ivory" id="content-form" name="comment" required></textarea>
+        </div>
+        <div class="form-check col-md-11 text-center mb-3 d-flex align-items-center justify-content-center">
+          <input class="form-chek-input" type="checkbox" id="policy-form" required>
+          <label for="policy-form" class="form-chek-label mb-0 ml-2"><a href="https://services.sms-datatech.co.jp/pig-data/privacy-policy/">プライバシーポリシーに同意する</a></label>
+        </div>
+        <div class="col-md-11 mt-3 text-center">
+          <input class="btn font-weight-bold px-3 px-md-5 py-3 btn-success url-btn text-white btn-lg" type="submit" value="確認画面へ">
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+<!-- フッター -->
+<footer class="bg-info text-white">
+  <div class="container pt-4 pb-2">
+    <div class=" row  justify-content-center">
+      <div class="col-md-4 d-flex align-items-center">
+        <p class="h5 font-weight-bold">株式会社SMSデータテック</p>
+      </div>
+      <div class="col-md-4 ">
+        <h3 class="mb-0 font-weight-bold h6">本社所在地</h3>
+        <p>〒104-0043 東京都中央区湊3-5-10 VORT 新富町 3F</p>
+        <h3 class="mb-0 font-weight-bold h6">資本金</h3>
+        <p>3,250万円</p>
+        <h3 class="mb-0 font-weight-bold h6">ホームページ</h3>
+        <p><a class=" text-white" href="https://www.sms-datatech.co.jp/" target="_blank">https://www.sms-datatech.co.jp/</a></p>
+      </div>
+      <div class="col-md-4 ">
+        <h3 class="mb-0 font-weight-bold h6">設立年月日</h3>
+        <p>2001年6月27日</p>
+        <h3 class="mb-0 font-weight-bold h6">従業員数</h3>
+        <p>443名（2018年現在）</p>
+      </div>
+    </div>
+  </div>
+  <div class="text-center">
+    <p class="mb-0" style="background: #123048;">2019 SMS DataTech all right reserved.</p>
+  </div>
+</footer>
+    <script src="js/jquery-3.5.1.slim.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript">
+      $(function () {
+        $('[data-toggle="tooltip"]').tooltip();
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,218 @@
+body{
+  font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
+}
+
+/* .header{
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+} */
+
+/* .bg-light{
+  background: black;
+} */
+
+/* .header-color{
+  background: black;
+} */
+
+/* header h1 {
+  margin: 0;
+  position: absolute;
+  left: 10px;
+  top: 0;
+  text-indent: -9999px;
+} */
+
+/* header h1 a{
+  display: block;
+  width: 120px;
+  height: 47px;
+  background-image: url(./image/Pigdata_LOGO_white_transparent_20190424.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+} */
+
+/* header ul{
+  margin: 0 60px 0 auto;
+  width: 1180px;
+  text-align: right;
+  height: 100%;
+} */
+
+/* .header__nav .nav ul li {
+    display: inline-block;
+    font-size: 16px;
+} */
+
+/* header li {
+    display: inline-block;
+    margin-left: 60px;
+    height: 100%;
+} */
+
+/* header li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 47px;
+} */
+
+.list-style-none, ul li {
+    list-style-type: none;
+}
+
+.balloonoya:hover .balloon {
+  display: inline;                /* インライン要素として表示 */
+}
+
+.balloon {
+    position: absolute;
+    display: none;
+    padding: 2px;
+    background-color: rgba(255, 255, 255, 0.50);
+    width: 130px;
+    left: 85%;
+    top: 100%;
+    margin-top: 12px;
+    font-size: 80%;
+    text-align: center;
+}
+
+div#main-image {
+  background: url(./image/main-image-bg1_1220.png) center/1px 100%;
+  position: relative;
+}
+
+div#main-image-content2 {
+    background: url(./image/main-image_0309.png) no-repeat top 11px center/2000px;
+    height: 650px;
+    z-index: 1;
+    position: relative;
+    max-width: 11400px;
+    margin: 0 auto;
+}
+
+@media (max-width: 767.98px) {
+  div#main-image-content2 {
+    background: url(./image/main-image-sp_1224.png) no-repeat top 4vw center/contain;
+    height: 0;
+    padding-bottom: 70px;
+    padding-top: 120%;
+}}
+
+a#main-image-btn {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 70px;
+}
+
+@media (max-width: 767.98px){
+  a#main-image-btn {
+    bottom: 18px;
+}}
+
+.url-btn {
+    width: 500px;
+    padding: 23px 0px;
+    /* border: 2px solid #fff; */
+    box-shadow: 0px 5px 0px 0px #6B9944;
+}
+
+.h0 {
+    font-size: 2.75rem;
+}
+
+.h5-small {
+    font-size: 1.2rem;
+}
+
+.line-2 {
+    min-height: 2.8em;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.h0, .h5-small, .h7 {
+    margin-bottom: .5rem;
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+img{
+  max-width: 100%;
+  height: auto;
+}
+
+.slide_company ul li{
+  outline: none;
+  display: inline-block;
+  margin: 1%;
+  text-align: center;
+  width: 22.5%;
+}
+
+#illustration {
+    background: url(./image/illustration_bg.jpg)center/cover;
+}
+
+#pig-data-title {
+    font-size: 2.4rem;
+    padding: 29px 130px 30px 0;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 300;
+    background: no-repeat url(./image/bout-pigdata_pig.png)center right 0px/100px;
+    margin: 0 auto 20px;
+    display: block;
+    max-width: 750px;
+    box-sizing: border-box;
+}
+
+p#pig-data-title span {
+    background: url(./image/about-pigdata_title.svg)center/cover;
+    text-indent: -9999px;
+    display: inline-block;
+    width: 13rem;
+    margin-right: 0.4rem;
+    text-align: left;
+}
+
+#about-pigdata {
+    background: url(./image/about-pigdata_bg.jpg)center/cover;
+}
+
+.line-2 {
+    min-height: 2.8em;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 767.98px){
+.flow-tri::before {
+    border-width: 11px;
+    right: -14px;
+    border-left-width: 6px;
+}}
+
+.flow-tri::before {
+    width: 0;
+    border: 15px transparent solid;
+    border-left: 14px solid #ffffff;
+    position: absolute;
+    right: -8px;
+    top: 50%;
+    content: "";
+    border-right-width: 0;
+    transform: translateY(-50%);
+}
+
+@media (max-width: 767.98px){
+.before-md-none::before {
+    display: none;
+}}
